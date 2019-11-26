@@ -1,0 +1,35 @@
+{
+    "name": "pizza-service",
+    "version": "1.0.0",
+    "description": "Micro-services for pizza shop",
+    "main": "src/index.js",
+    "scripts": {
+        "server": "babel-node ./src",
+        "server:prod": "NODE_ENV=production node ./dist/index.js",
+        "dev": "NODE_ENV=development npm run server",
+        "prod": "npm run clean && npm run build && npm run server:prod",
+        "clean": "rimraf dist",
+        "build": "babel ./src -d ./dist",
+        "start": "npm run prod",
+        "watch": "nodemon",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Mahesh Ambig",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/node": "^7.6.3",
+        "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+        "@babel/preset-env": "^7.7.4",
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.0.0",
+        "express": "^4.16.2",
+        "express-graphql": "^0.6.12",
+        "graphql": "^0.13.1",
+        "mongoose": "^5.0.9",
+        "rimraf": "^2.6.3"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "nodemon": "^1.19.0"
+    }
+}
