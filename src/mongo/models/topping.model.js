@@ -7,10 +7,9 @@ const ToppingSchema = new Schema({
         maxLength: 20,
         required: true
     },
-    category: {
-        type: String,
-        enum: ['veg', 'non-veg'],
-        required: true,
+    categoryId: {
+        type: Schema.ObjectId,
+        required: true
     },
     price: {
         type: Number,
