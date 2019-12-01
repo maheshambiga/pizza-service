@@ -1,3 +1,4 @@
+import { Schema } from "mongoose";
 import { modelGenerator } from "../../utils";
 
 export default modelGenerator({
@@ -7,9 +8,7 @@ export default modelGenerator({
       type: String,
       required: true
     },
-    categoryId: String,
-    description: {
-      type: String
-    }
+    category: { type: Schema.Types.ObjectId, ref: "Category" },
+    description: String
   }
 });

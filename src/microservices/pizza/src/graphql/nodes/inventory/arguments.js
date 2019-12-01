@@ -9,7 +9,9 @@ import categoryArguments from "../category/arguments";
 
 const category = new GraphQLObjectType({
   name: "category",
-  fields: () => categoryArguments
+  fields: () => ({
+    name: categoryArguments.name
+  })
 });
 
 export const mutationArgs = {

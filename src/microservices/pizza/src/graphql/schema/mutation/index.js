@@ -6,9 +6,11 @@ import {
   updateCategory
 } from "../../nodes/category/mutation";
 
-import { addInventory } from "../../nodes/inventory/mutation";
-console.log("Add category is---", addCategory);
-console.log("Add inventory is---", addInventory);
+import {
+  addInventory,
+  removeInventory,
+  updateInventory
+} from "../../nodes/inventory/mutation";
 
 export default new GraphQLObjectType({
   name: "Mutation",
@@ -16,6 +18,8 @@ export default new GraphQLObjectType({
     addCategory,
     removeCategory,
     updateCategory,
-    addInventory
+    addInventory,
+    removeInventory,
+    updateInventory
   }
 });

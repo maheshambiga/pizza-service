@@ -7,13 +7,13 @@ export const inventory = {
   type: InventoryType,
   args: { ntID: { type: GraphQLString } },
   resolve(parent, args) {
-    return InventoryModel.findOne({ id: args.id });
+    return InventoryModel.findOne({ id: args.id }).populate("category");
   }
 };
 
 export const inventories = {
   type: GraphQLList(InventoryType),
   resolve(parent, args) {
-    return InventoryModel.find({});
+    return InventoryModel.find({}).populate("category");
   }
 };
