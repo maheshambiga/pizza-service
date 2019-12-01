@@ -29,7 +29,9 @@
         "rimraf": "^2.6.3"
     },
     "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "nodemon": "^1.19.0"
+        "@babel/cli": "^7.6.4",
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
+        "rimraf": "^3.0.0"
     }
 }

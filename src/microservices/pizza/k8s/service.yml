@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: common-mongodb-database-service
+  name: pizza-api-service
 spec:
   ports:
-    - port: 27017
+    - port: 3001
       protocol: TCP
-      targetPort: 27017
+      targetPort: 3001
   selector:
-    app: mongodb
+    app: pizza-api
   type: NodePort

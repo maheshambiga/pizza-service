@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auth-api-deployment
+  name: pizza-api-deployment
 spec:
   template:
     metadata:
       labels:
-        app: auth-api
+        app: pizza-api
     spec:
       containers:
-        - name: auth-api
-          image: authapi
+        - name: pizza-api
+          image: pizzaapi
           imagePullPolicy: Never
           ports:
             - containerPort: 3001
@@ -27,4 +27,4 @@ spec:
               value: "900"
   selector:
     matchLabels:
-      app: auth-api
+      app: pizza-api

@@ -12,3 +12,8 @@ echo "auth-api service and deployment  done successfully.."
 kubectl apply -f user/k8s/service.yml
 kubectl apply -f user/k8s/deployment.yml
 echo "user-api service and deployment  done successfully.."
+
+#pizza add, search, update and remove api
+kubectl apply -f pizza/k8s/service.yml
+kubectl apply -f pizza/k8s/deployment.yml
+echo "pizza-api service and deployment  done successfully.."
