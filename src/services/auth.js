@@ -82,7 +82,7 @@ export const attachCurrentUser = async (req, res, next) => {
     try{
         const userRecord = await User.findOne({_id: _id}).exec();
         const {firstName, lastName, email, role} = userRecord.toObject();
-        req.user = {firstName, lastName, email, role};
+        req.user = {_id, firstName, lastName, email, role};
         return next();
     }catch (err) {
         logger.error('🔥 Error attaching user to req: %o', err);
