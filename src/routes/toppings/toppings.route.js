@@ -15,7 +15,7 @@ export default (router) => {
         celebrate({
             body: Joi.object({
                 name: Joi.string().required(),
-                category: Joi.string().required(),
+                categoryId: Joi.string().required(),
                 price: Joi.number().required(),
             }),
         }),
@@ -28,7 +28,7 @@ export default (router) => {
             body: Joi.object({
                 id: Joi.string().required(),
                 name: Joi.string().optional(),
-                category: Joi.string().optional(),
+                categoryId: Joi.string().optional(),
                 price: Joi.number().optional(),
             }),
         }),

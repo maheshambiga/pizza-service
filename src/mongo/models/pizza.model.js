@@ -3,6 +3,8 @@ import {CrustSchema}from './crust.model';
 import {CategorySchema} from './category.model';
 import {ProductSkuSchema} from './productSku.model';
 import {SizeSchema, limitPrice} from './size.model';
+import Topping from './topping.model';
+
 const PizzaSchema = Schema({
     name: {
         type: String,
@@ -28,7 +30,11 @@ const PizzaSchema = Schema({
         type: [ProductSkuSchema],
         required: false,
         default: []
-    }
+    }/*,
+    extraToppings: {
+        type: [Schema.ObjectId],
+        default: []
+    }*/
 });
 
 function toppingsLimit(val) {

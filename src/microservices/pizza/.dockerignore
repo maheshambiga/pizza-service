@@ -1,0 +1,5 @@
+# Prevent docker from copying .env file
+.env
+
+# Prevent docker from copying node_modules folder
+node_modules

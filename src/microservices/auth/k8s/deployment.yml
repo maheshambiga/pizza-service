@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-api-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: auth-api
+    spec:
+      containers:
+        - name: auth-api
+          image: authapi
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3001
+          env:
+            - name: JWT_SECRET
+              value: "p4sta.w1th-b0logn3s3-s@uce"
+            - name: PORT
+              value: "3001"
+            - name: MONGODB_URI
+              value: "mongodb://common-mongodb-service/pizza-services"
+            - name: LOG_LEVEL
+              value: "debug"
+            - name: TOKEN_LIFE
+              value: "900"
+  selector:
+    matchLabels:
+      app: auth-api

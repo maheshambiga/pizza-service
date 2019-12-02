@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: common-mongodb-database-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+        - image: mongo:3.4.23-xenial
+          name: mongodb
+          ports:
+            - containerPort: 27017
+  selector:
+    matchLabels:
+      app: mongodb
