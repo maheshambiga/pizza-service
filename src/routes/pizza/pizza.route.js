@@ -2,6 +2,8 @@ import {Router} from 'express';
 import {celebrate, Joi} from 'celebrate';
 import getPizzaController from './getPizza.controller';
 import getPizzaByCategory from './getPizzaByCategory.controller';
+import addToppingController from "./addTopping.controller";
+
 const route = Router();
 
 export default (router) => {
@@ -25,5 +27,14 @@ export default (router) => {
         }),
         getPizzaByCategory
     );
-
+    route.post(
+        '/add-topping',
+        celebrate({
+            body: Joi.object({
+                id: Joi.string().required(),
+                toppingId: Joi.string().required()
+            }),
+        }),
+        addToppingController
+    );
 };

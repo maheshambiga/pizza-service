@@ -1,20 +1,31 @@
-import {Router} from 'express';
-import {celebrate, Joi} from 'celebrate';
+import { Router } from 'express';
+import { celebrate, Joi } from 'celebrate';
 import addToCartController from './addToCart.controller';
+import redisConnector from '../../services/redis-connector';
+import logger from "../../utils/logger";
+import { checkTokenPresence, verifyToken, attachCurrentUser } from './../../services/auth';
 
-const route = Router();
+const cartRouter = Router();
 
 export default (router) => {
-    router.use('/cart', route);
+    router.use('/cart', checkTokenPresence, verifyToken, attachCurrentUser, cartRouter);
 
-    route.post(
+    cartRouter.use((req, res, next) => {
+        redisConnector().then((client) => {
+            req.redisClient = client;
+            next();
+        }).catch((err) => {
+            logger.error('🔥 error: %o', err);
+        });
+    });
+
+    cartRouter.post(
         '/add-to-cart',
         celebrate({
             body: Joi.object({
-                name: Joi.string().required(),
-                description: Joi.string().required(),
-                categoryId: Joi.string().required(),
-                toppings: Joi.array().required()
+                id: Joi.string().required(),
+                skuId: Joi.string().required(),
+                quantity: Joi.number().required()
             }),
         }),
         addToCartController

@@ -6,14 +6,16 @@ import pizza from './pizza/pizza.route';
 import topping from './toppings/toppings.route';
 import productSKU from './productSKU/productSKU.route';
 import category from './category/category.route';
+import cart from './Cart/cart.route';
 export default () => {
     const router = Router();
     auth(router);
     user(router);
-    inventory(router);
-    pizza(router);
-    topping(router);
-    productSKU(router);
     category(router);
+    topping(router);
+    inventory(router);
+    productSKU(router);
+    pizza(router);
+    cart(router);
     return router;
 }

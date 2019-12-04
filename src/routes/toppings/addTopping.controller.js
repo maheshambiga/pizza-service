@@ -5,10 +5,10 @@ import logger from "../../utils/logger";
 const addToppingController = async (req, res) => {
     logger.debug('Calling ADD TOPPING endpoint with body: %o', req.body);
     try {
-        const {name, category, price} = req.body;
+        const {name, categoryId, price} = req.body;
         const topping = new ToppingModel();
         topping.set('name', name);
-        topping.set('category', category);
+        topping.set('categoryId', categoryId);
         topping.set('price', price);
         const toppingObj = await topping.save();
 
