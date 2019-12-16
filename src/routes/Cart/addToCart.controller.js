@@ -5,30 +5,34 @@ import ProductModel from './../../mongo/models/pizza.model';
 
 const addCategoryController = async (req, res) => {
     logger.debug('Calling ADD TO CART endpoint with body: %o', req.body);
-    console.log(req.user._id);
     try {
-        const { id, skuId, quantity } = req.body;
+        const { productId, skuId, quantity } = req.body;
         const product = await ProductModel.aggregate([
-            { $match: { _id: mongoose.Types.ObjectId(id) } },
+            { $match: { _id: mongoose.Types.ObjectId(productId) } },
             { $unwind: '$skus' },
             { $match: { 'skus._id': mongoose.Types.ObjectId(skuId) } },
             {
                 $project: {
-                    _id: '$_id',
+                    _id: { "$toString": "$_id" },
                     name: '$name',
                     description: '$description',
                     toppings: '$toppings',
                     sku: { _id: '$skus._id', size: '$skus.size', crust: '$skus.crust' },
-                    quantity: quantity,
                     price: { '$multiply': ['$skus.price', quantity] }
                 }
             }
         ]).exec();
+        const userIdStr = req.user._id.toString();
+        const userId_4 = userIdStr.substring(userIdStr.length, -4);
+        const productIdStr = product[0]._id.toString();
+        const productId_4 = productIdStr.substring(productIdStr.length, -4);
+        const skuId_str = product[0].sku._id.toString();
+        const skuId_4 = skuId_str.substring(skuId_str.length, -4);
 
-        req.redisClient.RPUSH(`user:${req.user._id}`, JSON.stringify(product) );
+        req.redisClient.HSET(`u:${userIdStr}`, `p:${productIdStr}|sku:${skuId_str}`, JSON.stringify({...product[0], quantity}));
 
         res.status(200).json({
-            'statusCode': 200, 'message': 'Pizza got added to cart.', 'data': product[0]
+            'statusCode': 200, 'message': 'Pizza got added to cart.', 'data': {...product[0], quantity}
         });
 
     } catch (err) {

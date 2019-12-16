@@ -52,6 +52,7 @@ export async function signIn(email, password) {
 
 
 function generateToken(user) {
+    console.log('token life-->', config.jwtTokenLife);
     const today = new Date();
     const exp = new Date(today);
     exp.setDate(today.getDate() + 60);
@@ -64,15 +65,15 @@ function generateToken(user) {
             role: user.role
         },
         config.jwtSecret,
-        {expiresIn: '1h'}
+        {expiresIn: config.jwtTokenLife}
     );
 }
 
 export const verifyToken = expressJwt({
     secret: config.jwtSecret,
     getToken: (req) => {
-        if (req.headers['x-access-token']) {
-            return req.headers['x-access-token'];
+        if (req.headers['x-access-token'] || req.headers["authorization"]) {
+            return req.headers['x-access-token'] || req.headers["authorization"];
         }
         return null;
     }

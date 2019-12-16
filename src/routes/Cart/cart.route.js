@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import { celebrate, Joi } from 'celebrate';
 import addToCartController from './addToCart.controller';
+import getCartController from './getCart.controller';
+import removeCartHandler from './removeCart.controller';
 import redisConnector from '../../services/redis-connector';
 import logger from "../../utils/logger";
 import { checkTokenPresence, verifyToken, attachCurrentUser } from './../../services/auth';
@@ -8,26 +10,54 @@ import { checkTokenPresence, verifyToken, attachCurrentUser } from './../../serv
 const cartRouter = Router();
 
 export default (router) => {
-    router.use('/cart', checkTokenPresence, verifyToken, attachCurrentUser, cartRouter);
-
-    cartRouter.use((req, res, next) => {
-        redisConnector().then((client) => {
-            req.redisClient = client;
+    router.use('/cart', checkTokenPresence, verifyToken, attachCurrentUser, (req, res, next) => {
+        if (!req.redisClient) {
+            logger.debug('No redis client present in the header!');
+            // TODO - this is getting called over and over. Should load only once.
+            redisConnector().then((client) => {
+                req.redisClient = client;
+                next();
+            }).catch((err) => {
+                logger.error('🔥 error: %o', err);
+            });
+        } else {
+            logger.debug('Redis client is present in the header!');
             next();
-        }).catch((err) => {
-            logger.error('🔥 error: %o', err);
-        });
-    });
+        }
+    }, cartRouter);
+
 
     cartRouter.post(
-        '/add-to-cart',
+        '/add',
         celebrate({
             body: Joi.object({
-                id: Joi.string().required(),
+                productId: Joi.string().required(),
                 skuId: Joi.string().required(),
                 quantity: Joi.number().required()
             }),
         }),
         addToCartController
     );
+
+    cartRouter.get(
+        '/:userId',
+        celebrate({
+            params: Joi.object({
+                userId: Joi.string().required()
+            }),
+        }),
+        getCartController
+    );
+
+    cartRouter.delete(
+        '/remove',
+        celebrate({
+            body: Joi.object({
+                productId: Joi.string().required(),
+                skuId: Joi.string().required()
+            }),
+        }),
+        removeCartHandler
+    );
+
 };
