@@ -27,5 +27,9 @@ export default {
     rateLimit: {
         maxRequestsAllowed: 20,
         timeDifference: 60 // minutes
+    },
+    redisConnector: {
+        uri: process.env.REDIS_HOST_URI,
+        port: process.env.REDIS_HOST_PORT
     }
 };
