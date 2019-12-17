@@ -23,7 +23,7 @@ const getCartController = async (req, res) => {
             }
 
             res.status(200).json({
-                'statusCode': 200, 'message': 'Cart items.', 'data': {
+                'statusCode': 200, 'message': 'cart items.', 'data': {
                     total: items.length,
                     items
                 }

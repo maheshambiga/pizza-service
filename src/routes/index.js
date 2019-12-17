@@ -6,7 +6,7 @@ import pizza from './pizza/pizza.route';
 import topping from './toppings/toppings.route';
 import productSKU from './productSKU/productSKU.route';
 import category from './category/category.route';
-import cart from './Cart/cart.route';
+import cart from './cart/cart.route';
 export default () => {
     const router = Router();
     auth(router);
