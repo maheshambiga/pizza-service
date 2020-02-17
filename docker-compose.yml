@@ -36,17 +36,17 @@ services:
       - mongodb
     networks:
       - backend
-  userservice:
+  profileservice:
     restart: 'on-failure'
-    container_name: 'user-service'
+    container_name: 'profile-service'
     build:
-      context: ./users
+      context: profile
       dockerfile: Dockerfile.dev
     ports:
       - 3002:3002
     volumes:
       - /app/node_modules
-      - ./users:/app
+      - ./profile:/app
     depends_on:
       - mongodb
     networks:

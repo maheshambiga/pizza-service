@@ -2,377 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40201b37-fd26-4434-b4ca-a64d61180eda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auth/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/routes/controller/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/services/redis-connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/auth/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/auth/auth.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/cart/addToCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/cart/cart.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/cart/getCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/cart/removeCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/category/addCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/category/category.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/category/getAllCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/category/getCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/category/removeCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/category/updateCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/inventory/addInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/inventory/getInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/inventory/inventory.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/inventory/removeInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/inventory/updateInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/pizza/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/pizza/getPizza.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/pizza/getPizzaByCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/pizza/pizza.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/productSKU/addProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/productSKU/getProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/productSKU/productSKU.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/productSKU/removeProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/productSKU/updateProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/toppings/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/toppings/getTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/toppings/removeTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/toppings/toppings.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/toppings/updateTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/user/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/routes/user/user.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/services/redis-connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/utils/ratelimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/auth/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/auth/auth.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/cart/addToCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/cart/cart.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/cart/getCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/cart/removeCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/category/addCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/category/category.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/category/getAllCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/category/getCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/category/removeCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/category/updateCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/inventory/addInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/inventory/getInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/inventory/inventory.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/inventory/removeInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/inventory/updateInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/pizza/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/pizza/getPizza.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/pizza/getPizzaByCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/pizza/pizza.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/productSKU/addProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/productSKU/getProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/productSKU/productSKU.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/productSKU/removeProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/productSKU/updateProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/toppings/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/toppings/getTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/toppings/removeTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/toppings/toppings.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/toppings/updateTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/user/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/routes/user/user.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/services/redis-connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/utils/ratelimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/auth/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/auth/auth.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/cart/addToCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/cart/cart.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/cart/getCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/cart/removeCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/category/addCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/category/category.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/category/getAllCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/category/getCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/category/removeCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/category/updateCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/inventory/addInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/inventory/getInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/inventory/inventory.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/inventory/removeInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/inventory/updateInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/pizza/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/pizza/getPizza.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/pizza/getPizzaByCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/pizza/pizza.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/productSKU/addProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/productSKU/getProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/productSKU/productSKU.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/productSKU/removeProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/productSKU/updateProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/toppings/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/toppings/getTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/toppings/removeTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/toppings/toppings.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/toppings/updateTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/user/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/routes/user/user.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/services/redis-connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory/src/utils/ratelimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/auth/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/auth/auth.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/cart/addToCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/cart/cart.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/cart/getCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/cart/removeCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/category/addCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/category/category.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/category/getAllCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/category/getCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/category/removeCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/category/updateCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/inventory/addInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/inventory/getInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/inventory/inventory.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/inventory/removeInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/inventory/updateInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/pizza/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/pizza/getPizza.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/pizza/getPizzaByCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/pizza/pizza.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/productSKU/addProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/productSKU/getProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/productSKU/productSKU.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/productSKU/removeProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/productSKU/updateProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/toppings/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/toppings/getTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/toppings/removeTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/toppings/toppings.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/toppings/updateTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/user/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/routes/user/user.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/services/redis-connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pizza/src/utils/ratelimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/auth/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/auth/auth.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/cart/addToCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/cart/cart.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/cart/getCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/cart/removeCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/category/addCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/category/category.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/category/getAllCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/category/getCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/category/removeCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/category/updateCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/inventory/addInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/inventory/getInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/inventory/inventory.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/inventory/removeInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/inventory/updateInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/pizza/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/pizza/getPizza.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/pizza/getPizzaByCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/pizza/pizza.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/productSKU/addProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/productSKU/getProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/productSKU/productSKU.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/productSKU/removeProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/productSKU/updateProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/toppings/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/toppings/getTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/toppings/removeTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/toppings/toppings.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/toppings/updateTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/user/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/routes/user/user.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/services/redis-connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productSKU/src/utils/ratelimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/auth/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/auth/auth.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/cart/addToCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/cart/cart.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/cart/getCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/cart/removeCart.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/category/addCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/category/category.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/category/getAllCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/category/getCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/category/removeCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/category/updateCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/inventory/addInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/inventory/getInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/inventory/inventory.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/inventory/removeInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/inventory/updateInventory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/pizza/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/pizza/getPizza.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/pizza/getPizzaByCategory.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/pizza/pizza.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/productSKU/addProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/productSKU/getProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/productSKU/productSKU.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/productSKU/removeProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/productSKU/updateProductSKU.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/toppings/addTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/toppings/getTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/toppings/removeTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/toppings/toppings.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/toppings/updateTopping.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/user/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/routes/user/user.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/services/redis-connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toppings/src/utils/ratelimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/loaders/expressServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/models/category.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/models/crust.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/models/size.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/models/topping.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/mongo/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/routes/controller/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/routes/controller/users.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/services/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/utils/logger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/auth/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/cart/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cart/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth/auth.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/auth.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/user/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user/user.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ratelimiter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ratelimiter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/collection-2--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/collection-2--7414505003433720699.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/collection-4--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/collection-4--7414505003433720699.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/diagnostic.data/metrics.interim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/index-3--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-3--7414505003433720699.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/index-5--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-5--7414505003433720699.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/index-6--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-6--7414505003433720699.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/journal/WiredTigerLog.0000000040" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/mongod.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/.env" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/profile/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/profile/Dockerfile.dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/__tests__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/__tests__/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/profile/nodemon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/profile/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/profile/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/loaders/expressServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/loaders/expressServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/connector.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/connector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/category.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/category.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/crust.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/crust.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/pizza.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/pizza.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/productSku.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/productSku.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/size.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/size.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/topping.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/topping.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/routes/controller/getProfile.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/controller/getProfile.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/routes/controller/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/controller/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/routes/controller/users.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/controller/users.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/services/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/services/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/utils/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/utils/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/utils/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/utils/logger.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -389,33 +60,84 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth/src/services/auth.js">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="493">
+              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth/package.json">
+        <entry file="file://$PROJECT_DIR$/profile/Dockerfile.dev">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="252">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/src/services/user.js">
+        <entry file="file://$PROJECT_DIR$/profile/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="252">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profile/__tests__/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="27" selection-start-column="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.dockerignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profile/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profile/src/routes/controller/route.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="37" column="14" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="14" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -429,66 +151,6 @@
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/src/routes/controller/route.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/src/routes/controller/getProfile.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cart/src/routes/inventory/updateInventory.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/Dockerfile.dev">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -516,6 +178,8 @@
       <find>grpc</find>
       <find>signUp</find>
       <find>...</find>
+      <find>init-m</find>
+      <find>user</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -540,9 +204,7 @@
         <option value="$PROJECT_DIR$/auth/src/index.js" />
         <option value="$PROJECT_DIR$/init-mongo.js" />
         <option value="$PROJECT_DIR$/.travis.yml.js" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/user/src/routes/index.js" />
-        <option value="$PROJECT_DIR$/nginx/default.conf" />
         <option value="$PROJECT_DIR$/user/src/utils/config.js" />
         <option value="$PROJECT_DIR$/user/package.json" />
         <option value="$PROJECT_DIR$/auth/src/routes/auth/validteToken.controller.js" />
@@ -561,7 +223,6 @@
         <option value="$PROJECT_DIR$/users/src/utils/config.js" />
         <option value="$PROJECT_DIR$/users/Dockerfile.dev" />
         <option value="$PROJECT_DIR$/auth/Dockerfile.dev" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/auth/src/routes/controller/route.js" />
         <option value="$PROJECT_DIR$/users/src/routes/controller/getProfile.controller.js" />
         <option value="$PROJECT_DIR$/auth/src/routes/controller/validteToken.controller.js" />
@@ -574,6 +235,14 @@
         <option value="$PROJECT_DIR$/auth/Dockerfile" />
         <option value="$PROJECT_DIR$/users/Dockerfile" />
         <option value="$PROJECT_DIR$/cart/src/routes/inventory/updateInventory.controller.js" />
+        <option value="$PROJECT_DIR$/nginx/Dockerfile.dev" />
+        <option value="$PROJECT_DIR$/nginx/default.conf" />
+        <option value="$PROJECT_DIR$/users/package.json" />
+        <option value="$PROJECT_DIR$/users/tests/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.dockerignore" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -584,10 +253,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="803" />
-    <option name="y" value="366" />
-    <option name="width" value="1920" />
-    <option name="height" value="1123" />
+    <option name="y" value="23" />
+    <option name="width" value="1682" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -597,7 +265,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -605,16 +272,23 @@
               <item name="pizza-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="pizza-service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pizza-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pizza-service" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/users" />
+    <property name="editorconfig.notification" value="tab;" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -623,11 +297,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/users" />
       <recent name="$PROJECT_DIR$/auth" />
       <recent name="$PROJECT_DIR$/user/src/routes/user" />
       <recent name="$PROJECT_DIR$/user" />
-      <recent name="$PROJECT_DIR$/toppings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -660,18 +334,21 @@
       <workItem from="1579910668382" duration="499000" />
       <workItem from="1580137575225" duration="50000" />
       <workItem from="1580332688559" duration="501000" />
-      <workItem from="1580865245626" duration="730000" />
+      <workItem from="1580865245626" duration="6486000" />
+      <workItem from="1581344362496" duration="1175000" />
+      <workItem from="1581475120231" duration="2159000" />
+      <workItem from="1581874600579" duration="4430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89684000" />
+    <option name="totallyTimeSpent" value="103204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1123" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4995074" visible="true" weight="0.22044729" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4995074" visible="true" weight="0.22683705" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50049263" side_tool="true" weight="0.20340788" />
@@ -698,21 +375,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/category/src/mongo/models/size.model.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/mongo/models/size.model.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizza/src/mongo/models/size.model.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/productSKU/src/mongo/models/size.model.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toppings/src/mongo/models/size.model.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/toppings/src/mongo/models/size.model.js" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -729,7 +392,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/src/routes/user/user.route.js" />
-    <entry file="file://$PROJECT_DIR$/users/src/mongo/connector.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/mongo/connector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
@@ -739,28 +402,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth/src/utils/ratelimiter.js" />
-    <entry file="file://$PROJECT_DIR$/users/src/utils/logger.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/utils/logger.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/default.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/.dockerignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/loaders/expressServer.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/loaders/expressServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
@@ -772,16 +421,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/src/routes/auth/validteToken.controller.js" />
     <entry file="file://$PROJECT_DIR$/user/src/routes/user/user.controller.js" />
-    <entry file="file://$PROJECT_DIR$/auth/src/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth/src/utils/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
@@ -792,28 +431,15 @@
     <entry file="file://$PROJECT_DIR$/dump.rdb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/utils/config.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/utils/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="34" column="20" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizza/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/.env">
+    <entry file="file://$PROJECT_DIR$/pizza/.env" />
+    <entry file="file://$PROJECT_DIR$/profile/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
@@ -827,35 +453,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/init-mongo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/.babelrc">
+    <entry file="file://$PROJECT_DIR$/profile/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/.gitignore">
+    <entry file="file://$PROJECT_DIR$/profile/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/index.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
@@ -867,13 +486,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -895,14 +507,7 @@
     <entry file="file://$PROJECT_DIR$/auth/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/Dockerfile.dev">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/.dockerignore">
+    <entry file="file://$PROJECT_DIR$/profile/.dockerignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="9" selection-end-line="5" selection-end-column="9" />
@@ -919,27 +524,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/routes/controller/users.controller.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/routes/controller/users.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/src/routes/controller/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -960,12 +548,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/services/user.js">
+    <entry file="file://$PROJECT_DIR$/profile/src/services/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile/src/routes/controller/getProfile.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/src/routes/inventory/updateInventory.controller.js" />
+    <entry file="file://$PROJECT_DIR$/nginx/default.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/Dockerfile.dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile.dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/routes/controller/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile/src/routes/controller/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -980,51 +641,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/profile/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="294">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/routes/controller/route.js">
+    <entry file="file://$PROJECT_DIR$/profile/__tests__/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="27" selection-start-column="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/src/routes/controller/getProfile.controller.js">
+    <entry file="file://$PROJECT_DIR$/init-mongo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="189">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/Dockerfile.dev">
+    <entry file="file://$PROJECT_DIR$/.dockerignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile/Dockerfile.dev">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart/src/routes/inventory/updateInventory.controller.js">
+    <entry file="file://$PROJECT_DIR$/profile/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
     </entry>
