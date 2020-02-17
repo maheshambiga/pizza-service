@@ -12,7 +12,7 @@
     "build": "babel ./src -d ./dist",
     "start": "npm run prod",
     "watch": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Mahesh Ambig",
   "license": "ISC",
