@@ -12,8 +12,6 @@ script:
   - docker run maheshambiga/pizza-profile-service-test npm test -- --coverage
 
 after_success:
-  - echo "$DOCKER_ID"
-  - echo "$DOCKER_PASSWORD"
   - docker build -t maheshambiga/pizza-profile-service ./profile
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push maheshambiga/pizza-service-profile
+  - docker push maheshambiga/pizza-profile-service
