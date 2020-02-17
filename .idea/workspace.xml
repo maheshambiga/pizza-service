@@ -2,48 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40201b37-fd26-4434-b4ca-a64d61180eda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/collection-2--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/collection-2--7414505003433720699.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/collection-4--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/collection-4--7414505003433720699.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/diagnostic.data/metrics.interim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/index-3--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-3--7414505003433720699.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/index-5--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-5--7414505003433720699.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/index-6--7414505003433720699.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-6--7414505003433720699.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/journal/WiredTigerLog.0000000040" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/mongod.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-volume/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/.env" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/profile/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/profile/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/profile/Dockerfile.dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/__tests__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/__tests__/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/profile/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/profile/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/profile/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/loaders/expressServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/loaders/expressServer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/connector.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/connector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/category.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/category.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/crust.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/crust.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/pizza.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/pizza.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/productSku.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/productSku.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/size.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/size.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/topping.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/topping.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/mongo/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/mongo/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/routes/controller/getProfile.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/controller/getProfile.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/routes/controller/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/controller/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/routes/controller/users.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/controller/users.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/services/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/services/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/utils/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/utils/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/utils/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile/src/utils/logger.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -99,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -337,12 +296,12 @@
       <workItem from="1580865245626" duration="6486000" />
       <workItem from="1581344362496" duration="1175000" />
       <workItem from="1581475120231" duration="2159000" />
-      <workItem from="1581874600579" duration="4430000" />
+      <workItem from="1581874600579" duration="5225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103204000" />
+    <option name="totallyTimeSpent" value="103999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1123" extended-state="6" />
@@ -700,7 +659,7 @@
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
