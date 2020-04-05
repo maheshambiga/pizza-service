@@ -6,16 +6,16 @@ services:
   - docker
 
 before_install:
-  - docker image build -t maheshambiga/pizza-profile-service-test -f ./profile/Dockerfile.dev ./profile
-  - docker image build -t maheshambiga/pizza-auth-service-test -f ./auth/Dockerfile.dev ./auth
+  - docker image build -t maheshambiga/profile-service-test -f ./profile/Dockerfile.dev ./profile
+  - docker image build -t maheshambiga/auth-service-test -f ./auth/Dockerfile.dev ./auth
 
 script:
-  - docker run maheshambiga/pizza-profile-service-test npm test -- --coverage
-  - docker run maheshambiga/pizza-auth-service-test npm test -- --coverage
+  - docker run maheshambiga/profile-service-test npm test -- --coverage
+  - docker run maheshambiga/auth-service-test npm test -- --coverage
 
 after_success:
-  - docker build -t maheshambiga/pizza-profile-service ./profile
-  - docker build -t maheshambiga/pizza-auth-service ./auth
+  - docker build -t maheshambiga/profile-service ./profile
+  - docker build -t maheshambiga/auth-service ./auth
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push maheshambiga/pizza-profile-service
-  - docker push maheshambiga/pizza-auth-service
+  - docker push maheshambiga/profile-service
+  - docker push maheshambiga/auth-service
