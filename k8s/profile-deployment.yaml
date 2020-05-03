@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: profile-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: profile
+  template:
+    metadata:
+      labels:
+        component: profile
+    spec:
+      containers:
+        - name: profile
+          image: maheshambiga/profile-service
+          ports:
+            - containerPort: 3002
+          env:
+            - name: PORT
+              value: "3002"
+            - name: JWT_SECRET
+              value: "p4sta.w1th-b0logn3s3-s@uce"
+            - name: MONGODB_URI
+              value: "mongodb+srv://test:test@cluster0-cz0mj.mongodb.net/test?retryWrites=true&w=majority"
+            - name: LOG_LEVEL
+              value: "debug"
+            - name: TOKEN_LIFE
+              value: "1h"
+            - name: VALIDATE_TOKEN_API
+              value: 'http://auth-cluster-ip-service.default:3001/api/auth/verifyToken'
